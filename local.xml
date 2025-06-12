@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<project path="device/google/gs101" name="device/google/gs101" revision="refs/tags/android-15.0.0_r36" />
+<project path="device/google/gs101-sepolicy" name="device/google/gs101-sepolicy" revision="refs/tags/android-15.0.0_r36" />
+<project path="device/google/gs-common" name="device/google/gs-common" revision="refs/tags/android-15.0.0_r36" />
+<project path="device/google/raviole" name="device/google/raviole" revision="refs/tags/android-15.0.0_r36" />
+<project path="device/google/raviole-kernels/6.1" name="device/google/raviole-kernels/6.1" revision="refs/tags/android-15.0.0_r36" clone-depth="1" />
+<project path="hardware/google/graphics/common" name="platform/hardware/google/graphics/common" revision="refs/tags/android-15.0.0_r36" />
+<project path="hardware/google/gchips" name="platform/hardware/google/gchips" revision="refs/tags/android-15.0.0_r36" />
+<project path="hardware/google/graphics/gs101" name="platform/hardware/google/graphics/gs101" revision="refs/tags/android-15.0.0_r36" />
+</manifest>
