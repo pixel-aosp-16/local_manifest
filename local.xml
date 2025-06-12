@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote  name="pixel-aosp-16"
-           fetch="https://github.com/pixel-aosp-16/"
-           revision="refs/heads/16" />
-  
-<project path="device/google/gs101" name="device_google_gs101" remote="pixel-aosp-16" />
-<project path="device/google/gs101-sepolicy" name="device_google_gs101-sepolicy" remote="pixel-aosp-16" />
-<project path="device/google/gs-common" name="device_google_gs-common" remote="pixel-aosp-16" />
-<project path="device/google/raviole" name="device_google_raviole" remote="pixel-aosp-16" />
-<project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels/6.1" remote="pixel-aosp-16" />
-<project path="hardware/google/graphics/common" name="platform_hardware_google_graphics/common" remote="pixel-aosp-16" />
-<project path="hardware/google/gchips" name="platform_hardware_google_gchips" remote="pixel-aosp-16" />
-<project path="hardware/google/graphics/gs101" name="platform_hardware_google_graphics_gs101" remote="pixel-aosp-16" />
+<remote name="pixel-aosp-16" fetch="https://github.com/pixel-aosp-16/" revision="refs/heads/16" />
 
-<project path="vendor/adevtool" name="adevtool" remote="pixel-aosp-16" />
-<project path="vendor/state" name="vendor_state" remote="pixel-aosp-16" />
+<!-- Override these AOSP repos with ours to do minor build fixes or tweaks -->
+<remove-project name="platform/frameworks/base" />
+<remove-project name="platform/build" />
+<remove-project name="platform/build/soong" />
+<project path="frameworks/base"      name="platform_frameworks_base" remote="pixel-aosp-16" />
+<project path="platform/build"       name="platform_build"           remote="pixel-aosp-16" />
+<project path="platform/build/soong" name="platform_build_soong"     remote="pixel-aosp-16" />
+
+<!-- Repos we want to gut like a fish -->
+<project path="device/google/gs101"               name="device_google_gs101"                      remote="pixel-aosp-16" />
+<project path="device/google/gs101-sepolicy"      name="device_google_gs101-sepolicy"             remote="pixel-aosp-16" />
+<project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
+<project path="device/google/raviole"             name="device_google_raviole"                    remote="pixel-aosp-16" />
+<project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1"        remote="pixel-aosp-16" />
+<project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
+<project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
+<project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
+
+<!-- New repos  -->
+<project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
+<project path="vendor/adevtool"                       name="adevtool"                              remote="pixel-aosp-16" />
+<project path="vendor/state"                          name="vendor_state"                          remote="pixel-aosp-16" />
 
 </manifest>
