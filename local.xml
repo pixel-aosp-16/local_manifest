@@ -4,10 +4,8 @@
 <remote name="pixel-aosp-16" fetch="https://github.com/pixel-aosp-16/" revision="refs/heads/16" />
 
 <!-- Override these AOSP repos with ours to do minor build fixes or tweaks -->
-<remove-project name="platform/frameworks/base" />
-<remove-project name="platform/build" />
-<remove-project name="platform/build/soong" />
-<project path="frameworks/base"      name="platform_frameworks_base" remote="pixel-aosp-16" />
+<remove-project name="platform_build" />
+<remove-project name="platform_build_soong" />
 <project path="platform/build"       name="platform_build"           remote="pixel-aosp-16" />
 <project path="platform/build/soong" name="platform_build_soong"     remote="pixel-aosp-16" />
 
