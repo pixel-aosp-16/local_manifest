@@ -17,6 +17,12 @@
 <project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
 <project path="device/google/raviole"             name="device_google_raviole"                    remote="pixel-aosp-16" />
 <project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1"        remote="aosp"               revision="android-16.0.0_r1" /> <!-- Doing this instead of GrapheneOS kernel to reduce potential for pain -->
+<project path="device/google/zuma"                name="device_google_zuma"                       remote="pixel-aosp-16" />
+<project path="device/google/zuma-sepolicy"       name="device_google_zuma-sepolicy"              remote="pixel-aosp-16" />
+<project path="device/google/shusky"              name="device_google_shusky"                     remote="pixel-aosp-16" />
+<project path="device/google/shusky-kernels/6.1"   name="device_google_shusky-kernels_6.1"          remote="grapheneos"    />
+<project path="device/google/akita"               name="device_google_akita"                      remote="pixel-aosp-16" />
+<project path="device/google/akita-kernels/6.1"   name="device_google_akita-kernels_6.1"          remote="grapheneos"    />
 <project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
 <project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
 <project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
