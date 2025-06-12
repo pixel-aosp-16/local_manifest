@@ -25,9 +25,4 @@
 <project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
 <project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
 
-<!-- New repos  -->
-<project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
-<project path="vendor/adevtool"                       name="adevtool"                              remote="pixel-aosp-16" />
-<project path="vendor/state"                          name="vendor_state"                          remote="pixel-aosp-16" />
-
 </manifest>
