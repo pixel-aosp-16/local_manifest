@@ -12,18 +12,20 @@
 <project path="platform/build/soong" name="platform_build_soong"     remote="pixel-aosp-16" />
 
 <!-- Repos we want to gut like a fish -->
-<project path="device/google/gs101"               name="device_google_gs101"                      remote="pixel-aosp-16" />
-<project path="device/google/gs101-sepolicy"      name="device_google_gs101-sepolicy"             remote="pixel-aosp-16" />
+<project path="device/google/gs201"               name="device_google_gs201"                      remote="pixel-aosp-16" />
+<project path="device/google/gs201-sepolicy"      name="device_google_gs201-sepolicy"             remote="pixel-aosp-16" />
 <project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
-<project path="device/google/raviole"             name="device_google_raviole"                    remote="pixel-aosp-16" />
-<project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1"        remote="aosp"               revision="android-16.0.0_r1" /> <!-- Doing this instead of GrapheneOS kernel to reduce potential for pain -->
-<project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
+<project path="device/google/lynx"                name="device_google_lynx"                       remote="pixel-aosp-16" />
+<project path="device/google/lynx-sepolicy"       name="device_google_lynx-sepolicy"              remote="pixel-aosp-16" />
+<project path="device/google/lynx-kernels/6.1"    name="device/google/lynx-kernels/6.1"           remote="aosp" clone-depth="1" />
 <project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
+<project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
 <project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
+<project path="hardware/google/graphics/gs201"    name="platform_hardware_google_graphics_gs201"  remote="pixel-aosp-16" />
 
 <!-- New repos  -->
 <project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
 <project path="vendor/adevtool"                       name="adevtool"                              remote="pixel-aosp-16" />
-<project path="vendor/state"                          name="vendor_state"                          remote="pixel-aosp-16" />
+<project path="vendor/state"                          name="vendor_state"                          remote="pixel-aosp-16" clone-depth="1" />
 
 </manifest>
