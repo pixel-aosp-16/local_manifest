@@ -5,7 +5,7 @@
 
 <!-- Override these AOSP repos with ours to do minor build fixes or tweaks -->
 <remove-project name="platform_build_soong" />
-<project path="platform/build/soong" name="platform_build_soong"     remote="pixel-aosp-16" revision="refs/heads/16-grapheneos" />
+<project path="build/soong" name="platform_build_soong"     remote="pixel-aosp-16" revision="refs/heads/16-grapheneos" />
 
 <!-- Repos we want to gut like a fish -->
 <project path="device/google/gs101"               name="device_google_gs101"                      remote="pixel-aosp-16" />
