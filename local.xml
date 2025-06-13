@@ -18,6 +18,7 @@
 <project path="device/google/shusky"              name="device_google_shusky"                     remote="pixel-aosp-16" />
 <project path="device/google/shusky-kernels/6.1"  name="device_google_shusky-kernels_6.1"         remote="grapheneos"    />
 <project path="device/google/akita"               name="device_google_akita"                      remote="pixel-aosp-16" />
+<project path="device/google/akita-seploicy"      name="device_google_akita-seploicy"             remote="pixel-aosp-16" />
 <project path="device/google/akita-kernels/6.1"   name="device_google_akita-kernels_6.1"          remote="grapheneos"    />
 <project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
 <project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
