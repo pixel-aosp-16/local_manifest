@@ -20,12 +20,14 @@
 <project path="device/google/zuma"                name="device_google_zuma"                       remote="pixel-aosp-16" />
 <project path="device/google/zuma-sepolicy"       name="device_google_zuma-sepolicy"              remote="pixel-aosp-16" />
 <project path="device/google/shusky"              name="device_google_shusky"                     remote="pixel-aosp-16" />
-<project path="device/google/shusky-kernels/6.1"   name="device_google_shusky-kernels_6.1"          remote="grapheneos"    />
+<project path="device/google/shusky-kernels/6.1"  name="device_google_shusky-kernels_6.1"         remote="grapheneos"    />
 <project path="device/google/akita"               name="device_google_akita"                      remote="pixel-aosp-16" />
 <project path="device/google/akita-kernels/6.1"   name="device_google_akita-kernels_6.1"          remote="grapheneos"    />
 <project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
 <project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
 <project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
+<project path="hardware/google/graphics/gs201"    name="platform_hardware_google_graphics_gs201"  remote="pixel-aosp-16" />
+<project path="hardware/google/graphics/zuma"     name="platform_hardware_google_graphics_zuma"   remote="pixel-aosp-16" />
 
 <!-- New repos  -->
 <project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
