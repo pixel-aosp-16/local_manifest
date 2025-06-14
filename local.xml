@@ -26,4 +26,9 @@
 <project path="hardware/google/graphics/gs201"    name="platform_hardware_google_graphics_gs201"  remote="pixel-aosp-16" />
 <project path="hardware/google/graphics/zuma"     name="platform_hardware_google_graphics_zuma"   remote="pixel-aosp-16" />
 
+<!-- Override standalone repos -->
+<remove-project name="adevtool" />
+<project path="vendor/adevtool" name="adevtool" remote="pixel-aosp-16" />
+<remove-project name="vendor_state" />
+<project path="vendor/state" name="vendor_state" remote="pixel-aosp-16" clone-depth="1" />
 </manifest>
