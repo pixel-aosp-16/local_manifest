@@ -16,7 +16,7 @@
 <project path="device/google/gs101-sepolicy"      name="device_google_gs101-sepolicy"             remote="pixel-aosp-16" />
 <project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
 <project path="device/google/raviole"             name="device_google_raviole"                    remote="pixel-aosp-16" />
-<project path="device/google/raviole-kernels/6.1" name="device/google/raviole-kernels/6.1"        remote="aosp"               revision="android-16.0.0_r1" /> <!-- Doing this instead of GrapheneOS kernel to reduce potential for pain -->
+<project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1"        remote="grapheneos"    />
 <project path="device/google/zuma"                name="device_google_zuma"                       remote="pixel-aosp-16" />
 <project path="device/google/zuma-sepolicy"       name="device_google_zuma-sepolicy"              remote="pixel-aosp-16" />
 <project path="device/google/shusky"              name="device_google_shusky"                     remote="pixel-aosp-16" />
