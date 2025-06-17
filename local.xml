@@ -2,7 +2,6 @@
 <manifest>
 
 <remote name="pixel-aosp-16" fetch="https://github.com/pixel-aosp-16/" revision="refs/heads/16" />
-<remote name="grapheneos"    fetch="https://github.com/GrapheneOS/"    revision="refs/heads/16" />
 
 <!-- Override these AOSP repos with ours to do minor build fixes or tweaks -->
 <remove-project name="platform/frameworks/base" />
