@@ -40,6 +40,7 @@
 <project path="hardware/google/pixel-sepolicy"    name="platform_hardware_google_pixel-sepolicy"  remote="pixel-aosp-16" />
 
 <!-- New repos  -->
+<project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
 <project path="vendor/adevtool"                       name="adevtool"                              remote="pixel-aosp-16" />
 <project path="vendor/state"                          name="vendor_state"                          remote="pixel-aosp-16" clone-depth="1" />
 
