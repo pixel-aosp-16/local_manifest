@@ -24,6 +24,7 @@
 
 <!-- Repos we want to gut like a fish -->
 <remove-project name="platform/hardware/google/pixel" />
+<remove-project name="platform/hardware/google/pixel-sepolicy" />
 
 <project path="device/google/gs201"               name="device_google_gs201"                      remote="pixel-aosp-16"    revision="refs/heads/lynx" />
 <project path="device/google/gs201-sepolicy"      name="device_google_gs201-sepolicy"             remote="pixel-aosp-16" />
@@ -36,6 +37,7 @@
 <project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
 <project path="hardware/google/graphics/gs201"    name="platform_hardware_google_graphics_gs201"  remote="pixel-aosp-16" />
 <project path="hardware/google/pixel"             name="platform_hardware_google_pixel"           remote="pixel-aosp-16"    revision="refs/heads/lynx" />
+<project path="hardware/google/pixel-sepolicy"    name="platform_hardware_google_pixel-sepolicy"  remote="pixel-aosp-16" />
 
 <!-- New repos  -->
 <project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
