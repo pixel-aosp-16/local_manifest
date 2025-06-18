@@ -9,8 +9,8 @@
 <remove-project name="platform/build/soong" />
 
 <project path="frameworks/base"      name="platform_frameworks_base" remote="pixel-aosp-16" />
-<project path="platform/build"       name="platform_build"           remote="pixel-aosp-16" />
-<project path="platform/build/soong" name="platform_build_soong"     remote="pixel-aosp-16" />
+<project path="build"       name="platform_build"           remote="pixel-aosp-16" />
+<project path="build/soong" name="platform_build_soong"     remote="pixel-aosp-16" />
 
 <!-- Repos we want to gut like a fish -->
 <remove-project name="platform/hardware/google/pixel" />
