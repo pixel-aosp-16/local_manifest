@@ -26,13 +26,13 @@
 <remove-project name="platform/hardware/google/pixel" />
 <remove-project name="platform/hardware/google/pixel-sepolicy" />
 
-<project path="device/google/gs201"               name="device_google_gs201"                      remote="pixel-aosp-16"    revision="refs/heads/lynx" />
+<project path="device/google/gs201"               name="device_google_gs201"                      remote="pixel-aosp-16" />
 <project path="device/google/gs201-sepolicy"      name="device_google_gs201-sepolicy"             remote="pixel-aosp-16" />
-<project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16"    revision="refs/heads/port-to-16-qpr0-device" />
-<project path="device/google/lynx"                name="device_google_lynx"                       remote="pixel-aosp-16"    revision="refs/heads/port-to-16-qpr0-device" />
+<project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
+<project path="device/google/lynx"                name="device_google_lynx"                       remote="pixel-aosp-16" />
 <project path="device/google/lynx-sepolicy"       name="device_google_lynx-sepolicy"              remote="pixel-aosp-16" />
 <project path="device/google/lynx-kernels/6.1"    name="device_google_lynx-kernels_6.1"           remote="grapheneos" clone-depth="1" />
-<project path="hardware/google/pixel"             name="platform_hardware_google_pixel"           remote="pixel-aosp-16"    revision="refs/heads/lynx" />
+<project path="hardware/google/pixel"             name="platform_hardware_google_pixel"           remote="pixel-aosp-16" />
 <project path="hardware/google/pixel-sepolicy"    name="platform_hardware_google_pixel-sepolicy"  remote="pixel-aosp-16" />
 
 <!-- New repos  -->
