@@ -2,37 +2,59 @@
 <manifest>
 
 <remote name="pixel-aosp-16" fetch="https://github.com/pixel-aosp-16/" revision="refs/heads/16" />
-<remote name="grapheneos"    fetch="https://github.com/GrapheneOS/"    revision="refs/heads/16" />
+<remote name="grapheneos" fetch="https://github.com/GrapheneOS" revision="refs/heads/16" />
+<remote name="fred" fetch="https://github.com/u-fred/" revision="refs/heads/port-to-16-qpr0-device" />
 
 <!-- Override these AOSP repos with ours to do minor build fixes or tweaks -->
-<remove-project name="platform/frameworks/base" />
-<remove-project name="platform/build" />
-<remove-project name="platform/build/soong" />
-<project path="frameworks/base"      name="platform_frameworks_base" remote="pixel-aosp-16" />
-<project path="platform/build"       name="platform_build"           remote="pixel-aosp-16" />
-<project path="platform/build/soong" name="platform_build_soong"     remote="pixel-aosp-16" />
+<remove-project name="platform_hardware_google_pixel-sepolicy" />
+<project path="hardware/google/pixel-sepolicy" name="platform_hardware_google_pixel-sepolicy" remote="pixel-aosp-16" />
 
 <!-- Repos we want to gut like a fish -->
-<project path="device/google/gs101"               name="device_google_gs101"                      remote="pixel-aosp-16" />
-<project path="device/google/gs101-sepolicy"      name="device_google_gs101-sepolicy"             remote="pixel-aosp-16" />
-<project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
-<project path="device/google/raviole"             name="device_google_raviole"                    remote="pixel-aosp-16" />
-<project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1"        remote="grapheneos"    />
-<project path="device/google/zuma"                name="device_google_zuma"                       remote="pixel-aosp-16" />
-<project path="device/google/zuma-sepolicy"       name="device_google_zuma-sepolicy"              remote="pixel-aosp-16" />
-<project path="device/google/shusky"              name="device_google_shusky"                     remote="pixel-aosp-16" />
-<project path="device/google/shusky-kernels/6.1"  name="device_google_shusky-kernels_6.1"         remote="grapheneos"    />
-<project path="device/google/akita"               name="device_google_akita"                      remote="pixel-aosp-16" />
-<project path="device/google/akita-kernels/6.1"   name="device_google_akita-kernels_6.1"          remote="grapheneos"    />
-<project path="hardware/google/graphics/common"   name="platform_hardware_google_graphics_common" remote="pixel-aosp-16" />
-<project path="hardware/google/gchips"            name="platform_hardware_google_gchips"          remote="pixel-aosp-16" />
-<project path="hardware/google/graphics/gs101"    name="platform_hardware_google_graphics_gs101"  remote="pixel-aosp-16" />
-<project path="hardware/google/graphics/gs201"    name="platform_hardware_google_graphics_gs201"  remote="pixel-aosp-16" />
-<project path="hardware/google/graphics/zuma"     name="platform_hardware_google_graphics_zuma"   remote="pixel-aosp-16" />
 
-<!-- New repos  -->
-<project path="platform/packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="pixel-aosp-16" />
-<project path="vendor/adevtool"                       name="adevtool"                              remote="pixel-aosp-16" />
-<project path="vendor/state"                          name="vendor_state"                          remote="pixel-aosp-16" />
+<!-- Forked repos -->
+<remove-project name="device_google_gs101" />
+<remove-project name="device_google_gs101-sepolicy" />
+<remove-project name="device_google_gs-common" />
+<remove-project name="device_google_raviole" />
+<remove-project name="device_google_raviole-kernels_6.1" />
+<remove-project name="device_google_zuma" />
+<remove-project name="device_google_zuma-sepolicy" />
+<remove-project name="device_google_shusky" />
+<remove-project name="device_google_shusky-kernels_6.1" />
+<remove-project name="device_google_akita" />
+<remove-project name="device_google_akita-kernels_6.1" />
+<remove-project name="device_google_caimito" />
+<remove-project name="device_google_caimito-kernels_6.1" />
+<remove-project name="device_google_zumapro" />
+<remove-project name="device_google_zumapro-sepolicy" />
+
+<!-- Not forked repos -->
+<remove-project name="device/google/akita-sepolicy" />
+<remove-project name="device/google/caimito-sepolicy" />
+
+
+<project path="device/google/gs101" name="device_google_gs101" remote="pixel-aosp-16" />
+<project path="device/google/gs101-sepolicy" name="device_google_gs101-sepolicy" remote="pixel-aosp-16" />
+<project path="device/google/gs-common" name="device_google_gs-common" remote="pixel-aosp-16" />
+<project path="device/google/raviole" name="device_google_raviole" remote="pixel-aosp-16" />
+<project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+<project path="device/google/zuma" name="device_google_zuma" remote="pixel-aosp-16" />
+<project path="device/google/zuma-sepolicy" name="device_google_zuma-sepolicy" remote="pixel-aosp-16" />
+<project path="device/google/shusky" name="device_google_shusky" remote="pixel-aosp-16" />
+<project path="device/google/shusky-kernels/6.1" name="device_google_shusky-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+<project path="device/google/akita" name="device_google_akita" remote="pixel-aosp-16" />
+<project path="device/google/akita-sepolicy" name="device_google_akita-sepolicy" remote="pixel-aosp-16" />
+<project path="device/google/akita-kernels/6.1" name="device_google_akita-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+<project path="device/google/caimito" name="device_google_caimito" remote="pixel-aosp-16" />
+<project path="device/google/caimito-sepolicy" name="device_google_caimito-sepolicy" remote="pixel-aosp-16" />
+<project path="device/google/caimito-kernels/6.1" name="device_google_caimito-kernels_6.1" remote="pixel-aosp-16" clone-depth="1"/>
+<project path="device/google/zumapro" name="device_google_zumapro" remote="grapheneos" />
+<project path="device/google/zumapro-sepolicy" name="device_google_zumapro-sepolicy" remote="grapheneos" />
+
+<!-- Override standalone repos -->
+<remove-project name="adevtool" />
+<project path="vendor/adevtool" name="adevtool" remote="pixel-aosp-16" />
+<remove-project name="vendor_state" />
+<project path="vendor/state" name="vendor_state" remote="pixel-aosp-16" clone-depth="1" />
 
 </manifest>
