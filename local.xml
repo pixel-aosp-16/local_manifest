@@ -4,9 +4,9 @@
 <remote name="pixel-aosp-16" fetch="https://github.com/pixel-aosp-16/" revision="refs/heads/16" />
 
 <!-- Override these AOSP repos with ours to do minor build fixes or tweaks -->
-<remove-project name="platform/frameworks/base" />
-<remove-project name="platform/build" />
-<remove-project name="platform/build/soong" />
+<remove-project name="platform_frameworks_base" />
+<remove-project name="platform_build" />
+<remove-project name="platform_build_soong" />
 
 <project path="frameworks/base"     name="platform_frameworks_base" remote="pixel-aosp-16" />
 <project path="build/make"          name="platform_build"           remote="pixel-aosp-16">
@@ -23,8 +23,8 @@
 </project>
 
 <!-- Repos we want to gut like a fish -->
-<remove-project name="platform/hardware/google/pixel" />
-<remove-project name="platform/hardware/google/pixel-sepolicy" />
+<remove-project name="platform_hardware_google_pixel" />
+<remove-project name="platform_hardware_google_pixel-sepolicy" />
 
 <project path="device/google/gs201"               name="device_google_gs201"                      remote="pixel-aosp-16" />
 <project path="device/google/gs201-sepolicy"      name="device_google_gs201-sepolicy"             remote="pixel-aosp-16" />
