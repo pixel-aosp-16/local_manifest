@@ -36,6 +36,9 @@
 <project path="hardware/google/pixel-sepolicy"    name="platform_hardware_google_pixel-sepolicy"  remote="pixel-aosp-16" />
 
 <!-- New repos  -->
+<remove-project name="adevtool" />
+<remove-project name="vendor_state" />
+
 <project path="vendor/adevtool"                   name="adevtool"                                 remote="pixel-aosp-16" />
 <project path="vendor/state"                      name="vendor_state"                             remote="pixel-aosp-16" clone-depth="1" />
 
