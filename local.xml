@@ -31,10 +31,10 @@
 <project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
 <project path="device/google/lynx"                name="device_google_lynx"                       remote="pixel-aosp-16" />
 <project path="device/google/lynx-sepolicy"       name="device_google_lynx-sepolicy"              remote="pixel-aosp-16" />
-<project path="device/google/lynx-kernels/6.1"    name="device_google_lynx-kernels_6.1"           remote="grapheneos" clone-depth="1" />
+<project path="device/google/lynx-kernels/6.1"    name="device_google_lynx-kernels_6.1"           remote="grapheneos"        clone-depth="1" />
 <project path="device/google/pantah"              name="device_google_pantah"                     remote="pixel-aosp-16" />
 <project path="device/google/pantah-sepolicy"     name="device_google_pantah-sepolicy"            remote="aosp"              revision="refs/tags/android-15.0.0_r36" />
-<project path="device/google/pantah-kernels/6.1"  name="device_google_pantah-kernels_6.1"         remote="grapheneos" clone-depth="1" />
+<project path="device/google/pantah-kernels/6.1"  name="device_google_pantah-kernels_6.1"         remote="grapheneos"        clone-depth="1" />
 <project path="hardware/google/pixel"             name="platform_hardware_google_pixel"           remote="pixel-aosp-16" />
 <project path="hardware/google/pixel-sepolicy"    name="platform_hardware_google_pixel-sepolicy"  remote="pixel-aosp-16" />
 
@@ -43,6 +43,6 @@
 <remove-project name="vendor_state" />
 
 <project path="vendor/adevtool"                   name="adevtool"                                 remote="pixel-aosp-16" />
-<project path="vendor/state"                      name="vendor_state"                             remote="pixel-aosp-16" clone-depth="1" />
+<project path="vendor/state"                      name="vendor_state"                             remote="pixel-aosp-16"     clone-depth="1" />
 
 </manifest>
