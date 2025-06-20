@@ -23,6 +23,48 @@
 </project>
 
 <!-- Repos we want to gut like a fish -->
+<remove-project name="device_google_gs101" />
+<remove-project name="device_google_gs101-sepolicy" />
+
+<remove-project name="device_google_gs201" />
+<remove-project name="device_google_gs201-sepolicy" />
+
+<remove-project name="device_google_gs-common" />
+
+<remove-project name="device_google_akita" />
+<remove-project name="device/google/akita-sepolicy" />
+
+<remove-project name="device_google_bluejay" />
+<remove-project name="device/google/bluejay-sepolicy" />
+
+<remove-project name="device_google_caimito" />
+<remove-project name="device/google/caimito-sepolicy" />
+
+<remove-project name="device_google_comet" />
+<remove-project name="device/google/comet-sepolicy" />
+
+<remove-project name="device_google_felix" />
+<remove-project name="device/google/felix-sepolicy" />
+
+<remove-project name="device_google_lynx" />
+<remove-project name="device/google/lynx-sepolicy" />
+
+<remove-project name="device_google_pantah" />
+<remove-project name="device/google/pantah-sepolicy" />
+
+<remove-project name="device_google_raviole" />
+
+<remove-project name="device_google_shusky" />
+<remove-project name="device/google/shusky-sepolicy" />
+
+<remove-project name="device_google_tangorpro" />
+<remove-project name="device/google/tangorpro-sepolicy" />
+
+<remove-project name="device_google_zuma" />
+<remove-project name="device_google_zuma-sepolicy" />
+<remove-project name="device_google_zumapro" />
+<remove-project name="device_google_zumapro-sepolicy" />
+
 <remove-project name="platform_hardware_google_pixel" />
 <remove-project name="platform_hardware_google_pixel-sepolicy" />
 
@@ -31,10 +73,8 @@
 <project path="device/google/gs-common"           name="device_google_gs-common"                  remote="pixel-aosp-16" />
 <project path="device/google/lynx"                name="device_google_lynx"                       remote="pixel-aosp-16" />
 <project path="device/google/lynx-sepolicy"       name="device_google_lynx-sepolicy"              remote="pixel-aosp-16" />
-<project path="device/google/lynx-kernels/6.1"    name="device_google_lynx-kernels_6.1"           remote="grapheneos"        clone-depth="1" />
 <project path="device/google/pantah"              name="device_google_pantah"                     remote="pixel-aosp-16" />
 <project path="device/google/pantah-sepolicy"     name="device_google_pantah-sepolicy"            remote="aosp"              revision="refs/tags/android-15.0.0_r36" />
-<project path="device/google/pantah-kernels/6.1"  name="device_google_pantah-kernels_6.1"         remote="grapheneos"        clone-depth="1" />
 <project path="hardware/google/pixel"             name="platform_hardware_google_pixel"           remote="pixel-aosp-16" />
 <project path="hardware/google/pixel-sepolicy"    name="platform_hardware_google_pixel-sepolicy"  remote="pixel-aosp-16" />
 
